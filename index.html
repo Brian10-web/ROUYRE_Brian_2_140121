@@ -7,19 +7,23 @@
 </head>
 <body>
 	<header>
-		<img src="logoreservia.png" alt="logo" height="30" width="100">
-		<h3>Trouver votre hébergement pour des vacances de rêve</h3>
-		<p>En plein centre ville ou en pleine nature</p>
-		<input type="search" name="Rechercher"> <button>Recherher</button>
-		<nav>
+		<img src="images/logoreservia.png" alt="logo" id="logo" height="30" width="100">
+		<nav id="menu">
 			<ul>
-				<li>Hébergements</li>
-				<li>Activités</li>
-				<li>S'inscrire</li>
+				<li><a href="">Hébergements</a> </li>
+				<li><a href="">Activités</a></li>
+				<li><a href="">S'inscrire</a> </li>
 			</ul>
 		</nav>
-		<nav>
-			<h4>Filtres</h4>
+		<h3>Trouver votre hébergement pour des vacances de rêve</h3>
+		<h6>En plein centre ville ou en pleine nature</h6>
+		<input type="search" name="Rechercher"> <button>Recherher</button>
+		
+			
+	</header>
+
+	<section>
+		<h4>Filtres</h4>
 			<ul>
 				<li>Economique</li>
 				<li>Familial</li>
@@ -27,10 +31,9 @@
 				<li>Animaux autorisés</li>
 			</ul>
 			<p>Plus de 500 logements sont disponible dans cette ville</p>
-		</nav>
-	</header>
+	</section>
 
-	<aside>
+	<aside id="hebergement">
 		<h3>Hébergements à Marseille</h3>
 		<p>Auberge de la Cannebière</p>
 		<p> Hôtel du Port </p>
@@ -41,7 +44,7 @@
 
 	</aside>
 
-	<aside>
+	<aside id="populaire">
 		<h3>Les plus populaires</h3>
 		<p>Hôtel Le soleil du matin</p>
 		<p>Au coeur de l'eau Chambres d'hôtes</p>
@@ -59,30 +62,33 @@
 	</section>
 
 	<footer>
-		<div>
+		<section>
+			<div id="propos">
 			<h4>A propos</h4>
-			<ul>
-				<li>Fonctionnement du site</li>
-				<li>Conditions générales de vente</li>
-				<li>Données et confidentialité</li>
-			</ul>
-		</div>
+				<ul>
+					<li>Fonctionnement du site</li>
+					<li>Conditions générales de vente</li>
+					<li>Données et confidentialité</li>
+				</ul>
+			</div>
 
-		<div>
-			<h4>Nos hébergements</h4>
-			<ul>
-				<li>Charte qualité</li>
-				<li>Soumettre votre hôtel</li>	
-			</ul>
-		</div>
+			<div noshebergement>
+				<h4>Nos hébergements</h4>
+				<ul>
+					<li>Charte qualité</li>
+					<li>Soumettre votre hôtel</li>	
+				</ul>
+			</div>
 
-		<div>
-			<h4>Assistance</h4>
-			<ul>
-				<li>Centre d'aide</li>
-				<li>Nous contacter</li>
-			</ul>
-		</div>
+			<div id="assistance">
+				<h4>Assistance</h4>
+				<ul>
+					<li>Centre d'aide</li>
+					<li>Nous contacter</li>
+				</ul>
+			</div>
+		</section>
+		
 	</footer>
 
 </body>

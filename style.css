@@ -1,0 +1,49 @@
+/* HEADER */
+
+header
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+#logo
+{
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+}
+
+
+/* NAV */
+nav
+{
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
+	font-size: 1em;
+}
+
+nav ul
+{
+	list-style-type: none;
+	display: flex;
+}
+
+nav li
+{
+	margin-right: 40px;
+}
+
+nav a
+{
+	font-size: 1.3em;
+	color: #181818;
+	padding-bottom: 3px;
+	text-decoration: none;
+}
+
+nav a:hover
+{
+	border-top: 3px solid red;
+}
