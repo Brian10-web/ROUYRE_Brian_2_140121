@@ -7,49 +7,64 @@
 </head>
 <body>
 	<header>
-		<img src="images/logoreservia.png" alt="logo" id="logo" height="30" width="100">
-		<nav id="menu">
-			<ul>
-				<li><a href="">Hébergements</a> </li>
-				<li><a href="">Activités</a></li>
-				<li><a href="">S'inscrire</a> </li>
-			</ul>
-		</nav>
-		<h3>Trouver votre hébergement pour des vacances de rêve</h3>
-		<h6>En plein centre ville ou en pleine nature</h6>
-		<input type="search" name="Rechercher"> <button>Recherher</button>
-		
+		<section id="titre">
+			<div id="logo">
+				<img src="images/logoreservia.png" alt="logo" id="logo" height="30" width="100">
+			</div>
 			
+			<nav> <!-- navigation avec le menu -->
+				<ul>
+					<li><a href="">Hébergements</a> </li>
+					<li><a href="">Activités</a></li>
+					<li><a href="">S'inscrire</a> </li>
+				</ul>
+			</nav>
+		</section>
 	</header>
 
-	<section>
-		<h4>Filtres</h4>
+
+	<section id="search"> <!-- l'outil recherche  -->
+
+			<h3 class="p1">Trouver votre hébergement pour des vacances de rêve</h3>
+			<h5 class="p1">En plein centre ville ou en pleine nature</h5>
+			
+			<input type="search" name="Rechercher"> <button>Recherher</button>
+	</section>
+			
+			
+	<section id="filtre"> <!-- barre de filtre -->
+
 			<ul>
+				<li>Filtres</li>
 				<li>Economique</li>
 				<li>Familial</li>
 				<li>Romantique</li>
 				<li>Animaux autorisés</li>
 			</ul>
-			<p>Plus de 500 logements sont disponible dans cette ville</p>
+			
 	</section>
 
-	<aside id="hebergement">
-		<h3>Hébergements à Marseille</h3>
-		<p>Auberge de la Cannebière</p>
-		<p> Hôtel du Port </p>
-		<p>Hôtel Les mouettes</p>
-		<p>Hôtel de la mer</p>
-		<p>Auberge Le Panier</p>
-		<p>Hôtel chez Amina</p>
+	<p class="p2">Plus de 500 logements sont disponible dans cette ville</p> <!-- A placer dans une autre balise -->
 
-	</aside>
+	<section id="main">
+		<aside id="hebergement">
+			<h3>Hébergements à Marseille</h3>
+			<p>Auberge de la Cannebière</p>
+			<p> Hôtel du Port </p>
+			<p>Hôtel Les mouettes</p>
+			<p>Hôtel de la mer</p>
+			<p>Auberge Le Panier</p>
+			<p>Hôtel chez Amina</p>
+		</aside>
 
-	<aside id="populaire">
-		<h3>Les plus populaires</h3>
-		<p>Hôtel Le soleil du matin</p>
-		<p>Au coeur de l'eau Chambres d'hôtes</p>
-		<p>Hôtel Tout bleu et Blanc</p>
-	</aside>
+		<aside id="populaire">
+			<h3>Les plus populaires</h3>
+			<p>Hôtel Le soleil du matin</p>
+			<p>Au coeur de l'eau Chambres d'hôtes</p>
+			<p>Hôtel Tout bleu et Blanc</p>
+		</aside>
+	</section>
+	
 
 	<section>
 		<h3>Activités à Marseille</h3>
@@ -62,32 +77,32 @@
 	</section>
 
 	<footer>
-		<section>
+		
 			<div id="propos">
-			<h4>A propos</h4>
 				<ul>
-					<li>Fonctionnement du site</li>
-					<li>Conditions générales de vente</li>
-					<li>Données et confidentialité</li>
+					<li><strong>A propos</strong></li><br>
+					<li class="p1">Fonctionnement du site</li><br>
+					<li class="p1">Conditions générales de vente</li><br>
+					<li class="p1">Données et confidentialité</li><br>
 				</ul>
 			</div>
 
-			<div noshebergement>
-				<h4>Nos hébergements</h4>
+			<div id="noshebergements">
 				<ul>
-					<li>Charte qualité</li>
-					<li>Soumettre votre hôtel</li>	
+					<li><strong>Nos hébergements</strong></li><br>
+					<li class="p1">Charte qualité</li><br>
+					<li class="p1">Soumettre votre hôtel</li><br>	
 				</ul>
 			</div>
 
 			<div id="assistance">
-				<h4>Assistance</h4>
 				<ul>
-					<li>Centre d'aide</li>
-					<li>Nous contacter</li>
+					<li><strong>Assistance</strong></li><br>
+					<li class="p1">Centre d'aide</li><br>
+					<li class="p1">Nous contacter</li><br>
 				</ul>
 			</div>
-		</section>
+		
 		
 	</footer>
 

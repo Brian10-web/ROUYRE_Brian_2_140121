@@ -1,28 +1,16 @@
-/* HEADER */
+body
+{
+	width: 900px
+	margin: auto;
+}
 
-header
+/*HEADER*/
+#titre
 {
 	display: flex;
 	justify-content: space-between;
-	align-items: flex-end;
 }
 
-#logo
-{
-	display: flex;
-	flex-direction: row;
-	align-items: baseline;
-}
-
-
-/* NAV */
-nav
-{
-	display: flex;
-	align-items: flex-end;
-	justify-content: flex-end;
-	font-size: 1em;
-}
 
 nav ul
 {
@@ -32,18 +20,134 @@ nav ul
 
 nav li
 {
-	margin-right: 40px;
+	margin-right: 15px;
 }
 
 nav a
 {
 	font-size: 1.3em;
-	color: #181818;
 	padding-bottom: 3px;
 	text-decoration: none;
 }
 
-nav a:hover
+nav a:hover /*lorsque qu'on survole le bouton un bord bleu apparait*/
 {
-	border-top: 3px solid red;
+	border-top: 2px solid #0065FC;
 }
+
+/*Section search*/
+
+.p1 /*p1 et p2 pour coller les deux lignes*/
+{
+	line-height: 0.2em;
+}
+
+.p2
+{
+	font-size: 0.8em;
+}
+
+/*Section filtre*/ 
+
+#filtre
+{
+	display: flex;
+	font-weight: bold;
+	margin-left: -40px;
+
+}
+
+#filtre ul
+{
+	list-style-type: none;
+	display: flex;
+}
+
+#filtre li
+{
+	margin-right: 20px;
+	display: flex;
+}
+
+/*Les deux aside*/
+
+#main
+{
+	display: flex;
+	justify-content: space-between;
+	margin: 4px;
+}
+
+#hebergement , #populaire
+{
+	margin: 10px;
+}
+#hebergement
+{
+	flex: 1.2;
+	position: static;
+	background-color: #F2F2F2;
+	border-radius: 15px;
+	padding: 10px;
+	font-size: 0.9em;
+	height: 480px;
+}
+
+#populaire
+{
+	flex: 0.6;
+	position: static;
+	background-color: #F2F2F2;
+	border-radius: 15px;
+	padding: 10px;
+	font-size: 0.9em;
+	height: 480px;
+}
+
+
+
+/*Footer*/
+
+footer
+{
+	display: flex;
+	background-color: #F2F2F2;
+
+}
+
+#propos ul
+{
+	list-style-type: none;
+}
+
+#propos
+{
+	display: flex;
+	width: 333px;
+}
+
+#noshebergements ul
+{
+	list-style-type: none;
+}
+
+#noshebergements
+{
+	display: flex;
+	width: 333px;
+}
+
+#assistance ul
+{
+	list-style-type: none;
+}
+
+#assistance
+{
+	display: flex;
+	width: 333px;
+
+}
+
+
+
