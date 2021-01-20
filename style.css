@@ -91,6 +91,10 @@ nav a:hover /*lorsque qu'on survole le bouton un bord bleu apparait*/
 	padding: 10px;
 	font-size: 0.9em;
 	height: 480px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	flex-direction: column;
 }
 
 #populaire
@@ -102,7 +106,36 @@ nav a:hover /*lorsque qu'on survole le bouton un bord bleu apparait*/
 	padding: 10px;
 	font-size: 0.9em;
 	height: 480px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
 }
+
+#activites
+{
+	flex: 1.2;
+	position: static;
+	background-color: white;
+	border-radius: 15px;
+	padding: 10px;
+	font-size: 0.9em;
+	height: 480px;
+	display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
