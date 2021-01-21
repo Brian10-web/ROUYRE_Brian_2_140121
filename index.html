@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<title>Reservia</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://kit.fontawesome.com/46f48c67bd.js" crossorigin="anonymous"></script>
 </head>
 <body>
 	<header>
@@ -36,98 +37,85 @@
 
 			<ul>
 				<li>Filtres</li>
-				<li>Economique</li>
-				<li>Familial</li>
-				<li>Romantique</li>
-				<li>Animaux autorisés</li>
+				<li><i class="fas fa-money-bill-wave"></i>Economique</li>
+				<li><i class="fas fa-child"></i>Familial</li>
+				<li><i class="fas fa-heart"></i>Romantique</li>
+				<li><i class="fas fa-dog"></i>Animaux autorisés</li>
 			</ul>
 			
 	</section>
 
-	<p class="p2">Plus de 500 logements sont disponible dans cette ville</p> <!-- A placer dans une autre balise -->
+	<!-- <p class="p2"><i class="fas fa-info"></i>Plus de 500 logements sont disponible dans cette ville </p>  --><!-- A placer dans une autre balise -->
 
-	<section id="main">
-		<aside id="hebergement">
-			<h3>Hébergements à Marseille</h3>
-			<span id="heb1">
-				<img src="images/cannebiere.jpg" alt="cannbiere" height="110" width="180"> 
-				<span id="description1">
-					<p class="p1">Auberge de la Cannebière</p>
-					<p class="p1">Nuit à partir de <strong>25$</strong></p>
-				</span>	
-			</span>
-
-			<span id="heb2">
-				<img src="images/port.jpg" alt="port" height="110" width="180"> 
-				<span id="description2">
-					<p class="p1"> Hôtel du Port </p>
-					<p class="p1">Nuit à partir de <strong>52$</strong></p>
-				</span>	
-			</span>
-
-			<span id="heb3">
-				<img src="images/mouette.jpg" alt="mouettes" height="110" width="180"> 
-				<span id="description3">
-					<p class="p1">Hôtel Les mouettes</p>
-					<p class="p1">Nuit à partir de <strong>76$</strong></p>
-				</span>	
-			</span>
-
-			<span id="heb4">
-				<img src="images/hoteldelamer.jpg" alt="hoteldelamer" height="110" width="180"> 
-				<span id="description4">
-					<p class="p1">Hôtel de la mer</p>
-					<p class="p1">Nuit à partir de <strong>46$</strong></p>
-				</span>	
-			</span>
-
-			<span id="heb5">
-				<img src="images/panier.jpg" alt="panier" height="110" width="180"> 
-				<span id="description5">
-					<p class="p1">Auberge Le Panier</p>
-					<p class="p1">Nuit à partir de <strong>23$</strong></p>
-				</span>	
-			</span>
-
-			<span id="heb6">
-				<img src="images/amina.jpg" alt="amina" height="110" width="180"> 
-				<span id="description6">
-					<p class="p1">Hôtel chez Amina</p>
-					<p class="p1">Nuit à partir de <strong>96$</strong></p>
-				</span>	
-			</span>
 	
-		</aside>
+	<main>
+		<section id="hebergement">
+			<h3>Hébergements à Marseille</h3>
+			<div id="heb">
+				<article>
+					<figure><img src="images/cannebiere.jpg" alt="cannbiere" height="110" width="180"></figure>
+					<h3 class="p1">Auberge de la cannebière</h3>
+					<p class="p1">Nuit à partir de <strong>25 euros</strong></p>
+					<p class="p1">******</p>
+				</article>
+				<article>
+					<figure><img src="images/port.jpg" alt="port" height="110" width="180"></figure>
+					<h3 class="p1">Hotel du port</h3>
+					<p class="p1">Nuit à partir de 52 euros</p>
+					<p class="p1">******</p>
+				</article>
+				<article>
+					<figure><img src="images/mouette.jpg" alt="mouettes" height="110" width="180"></figure>
+					<h3 class="p1">Hotel les mouettes</h3>
+					<p class="p1">Nuit à partir 76 euros</p>
+					<p class="p1">******</p>
+				</article>
+				<article>
+					<figure><img src="images/hoteldelamer.jpg" alt="hoteldelamer" height="110" width="180"></figure>
+					<h3 class="p1">Hotel de la mer</h3>
+					<p class="p1">Nuit à partir de 46 euros</p>
+					<p class="p1">******</p>
+				</article>
+				<article>
+					<figure><img src="images/panier.jpg" alt="panier" height="110" width="180"></figure>
+					<h3 class="p1">Auberge le panier</h3>
+					<p class="p1">Nuit à partir de <strong>23 euros</strong></p>
+					<p class="p1">******</p>
+				</article>
+				<article>
+					<figure><img src="images/amina.jpg" alt="amina" height="110" width="180"></figure>
+					<h3 class="p1">Hotel chez Amina</h3>
+					<p class="p1">Nuit à partir de 96 euros</p>
+					<p class="p1">******</p>
+				</article>
+			</div>
+		</section>
 
-		<aside id="populaire">
+		<aside>
 			<h3>Les plus populaires</h3>
-			<span id="pop1">
-				<img src="images/soleilmatin.jpg" alt="soleildumatin" height="110" width="180"> 
-				<span id="despop1">
-					<p class="p1">Hôtel Le soleil du matin</p>
-					<p class="p1">Nuit à partir de <strong>128$</strong></p>
-				</span>	
-			</span>
-
-			<span id="pop2">
-				<img src="images/aucoeur.jpg" alt="aucoeur" height="110" width="180"> 
-				<span id="despop2">
-					<p class="p1">Au coeur de l'eau Chambres d'hôtes</p>
-					<p class="p1">Nuit à partir de <strong>71$</strong></p>
-				</span>	
-			</span>
-			
-			<span id="pop3">
-				<img src="images/bleublanc.jpg" alt="bleuetblanc" height="110" width="180"> 
-				<span id="despop3">
-					<p class="p1">Hôtel Tout bleu et Blanc</p>
-					<p class="p1">Nuit à partir de <strong>96$</strong></p>
-				</span>	
-			</span>
-			
-			
+			<ul id="pop">
+				<li>
+					<figure><img src="images/soleilmatin.jpg" alt="soleildumatin" height="70" width="120"></figure>
+					<h3 class="p1">Hotel Le soleil du matin</h3>
+					<p class="p1">Nuit à parti de 128 euros</p>
+					<p class="p1">******</p>
+				</li>
+				<li>
+					<figure><img src="images/aucoeur.jpg" alt="aucoeur" height="70" width="120"></figure>
+					<h3 class="p1">Au coeur de l'eau Chambre d'hôtes</h3>
+					<p class="p1">Nuit à partir de 71 euros</p>
+					<p class="p1">******</p>
+				</li>
+				<li>
+					<figure><img src="images/bleublanc.jpg" alt="bleuetblanc" height="70" width="120"></figure>
+					<h3 class="p1">Hôtel tout bleu et blanc</h3>
+					<p class="p1">Nuit à partir de 96 euros</p>
+					<p class="p1">******</p>
+				</li>
+				
+			</ul>
 		</aside>
-	</section>
+	</main>
 	
 
 	<section id="activites">

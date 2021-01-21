@@ -1,6 +1,7 @@
 body
 {
-	width: 900px
+	/*width: 900px;*/
+	margin: 0;
 	margin: auto;
 }
 
@@ -69,9 +70,9 @@ nav a:hover /*lorsque qu'on survole le bouton un bord bleu apparait*/
 	display: flex;
 }
 
-/*Les deux aside*/
+/*MAIN*/
 
-#main
+main
 {
 	display: flex;
 	justify-content: space-between;
@@ -84,6 +85,22 @@ nav a:hover /*lorsque qu'on survole le bouton un bord bleu apparait*/
 }
 #hebergement
 {
+	flex: 3;
+	background-color: #F2F2F2;
+	position: static;
+	border-radius: 15px;
+	padding: 10px;
+	font-size: 0.9em;
+	height: 480px;
+}
+#heb
+{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+aside
+{
 	flex: 1.2;
 	position: static;
 	background-color: #F2F2F2;
@@ -91,29 +108,18 @@ nav a:hover /*lorsque qu'on survole le bouton un bord bleu apparait*/
 	padding: 10px;
 	font-size: 0.9em;
 	height: 480px;
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	flex-direction: column;
 }
 
-#populaire
+#pop
 {
-	flex: 0.6;
-	position: static;
-	background-color: #F2F2F2;
-	border-radius: 15px;
-	padding: 10px;
-	font-size: 0.9em;
-	height: 480px;
-	display: flex;
-	justify-content: space-between;
-	flex-direction: column;
+	list-style-type: none;
 }
+
+
+/*ACTIVITES*/
 
 #activites
 {
-	flex: 1.2;
 	position: static;
 	background-color: white;
 	border-radius: 15px;
