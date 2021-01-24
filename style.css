@@ -1,8 +1,7 @@
 body
 {
-	/*width: 900px;*/
-	margin: 0;
-	margin: auto;
+	width: 100%;
+	height: 100%;
 }
 
 /*HEADER*/
@@ -84,6 +83,7 @@ main
 {
 	margin: 10px;
 }
+
 #hebergement
 {
 	flex: 3;
@@ -93,6 +93,14 @@ main
 	padding: 10px;
 	font-size: 0.9em;
 	height: 480px;
+	margin-top: 0;
+}
+
+.figcaptionHeb
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 #heb
@@ -122,33 +130,41 @@ aside
 
 #activites
 {
-	display: flex;
-	max-width: 1024px;
+	/*display: flex;*/
 }
 
-#activites ul
+#activites li
 {
 	list-style-type: none;
 	display: flex;
+	flex-direction: row;
 	margin-left: 0;
 	margin-right: 0;
 }
 
 #activites img
 {
-	border-radius: 15px;
+	width: 100%;
 }
 
-#act1
+.figureActi
 {
-	border-bottom: 1px solid white;
+	display: flex;
+	border-radius: 15px;
+	background-color: white;
+	box-shadow: 5px 2px 5px grey;
+	flex-flow: row wrap;
+}
+
+.figcaptionActi
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 
-
-
-
-#double
+.double
 {
 	display: flex;
 	flex-direction: column;
@@ -156,6 +172,17 @@ aside
 	margin-top: 0;
 }
 
+.ulActi
+{
+	width: 25%;
+
+}
+
+#titleActi
+{
+	display: flex;
+	justify-content: start;
+}
 
 
 /*Footer*/
