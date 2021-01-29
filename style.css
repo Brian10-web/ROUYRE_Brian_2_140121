@@ -48,12 +48,12 @@ nav a:hover /*lorsque qu'on survole le bouton un bord bleu apparait*/
 
 .p1 /*p1 et p2 pour coller les deux lignes*/
 {
-	line-height: 0.2em;
+	line-height: 1em;
 }
 
 .p2
 {
-	font-size: 0.8em;
+	line-height: 0.1em;
 }
 
 .blue  /*BOUTON INFORMATION*/
@@ -239,8 +239,7 @@ main i
 {
 	display: flex;
 	justify-content: flex-start;
-	align-items: center;
-	
+	flex-direction: column;
 }
 
 #heb
@@ -383,12 +382,6 @@ footer
 	background-color: #F2F2F2;
 
 }
-
-/*footer li
-{
-	display: flex;
-	flex-direction: row;
-}*/
 
 #propos ul
 {
