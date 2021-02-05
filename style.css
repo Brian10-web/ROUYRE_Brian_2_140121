@@ -252,18 +252,21 @@ main i
 
 .figureHeb
 {
-	width: 225px;
 	border-radius: 15px;
-	background-color: white;
-	border: 4px solid white;
 	overflow: hidden;
-	margin: 20px;
+	margin: 5px;
+	height: 120px;
 }
 .liHeb
 {
+	width: 33%;
+	border-radius: 15px;
+	background-color: white;
 	display: flex;
 	flex-direction: column;
 	list-style-type: none;
+	margin: 20px;
+	box-shadow: 5px 5px 15px -1px;
 }
 
 .figcaptionHeb
@@ -275,7 +278,7 @@ main i
 {
 	display: flex;
 	flex-direction: row;
-	width: 20%;
+	width: 100%;
 	margin: 0;
 	padding: 0;
 }
@@ -312,31 +315,37 @@ aside
 	margin-top: 0px;
 }
 
+#pop li
+{
+	background-color: white;
+	border: 4px solid white;
+	border-radius: 15px;
+	margin: 20px;
+	display: flex;
+	height: 120px;
+}
+
 .figPop
 {
 	display: flex;
-	margin-top: 25px;
-	margin-bottom: 25px;
-	background-color: white;
-	border-radius: 15px;
-	margin-right: 10px;
-	margin-left: 10px;
-	border: 4px solid white;
+	margin: 0;
+	height: auto;
+	width: 40%;
 }
 
-aside img
+#pop img
 {
 	border-bottom-left-radius: 15px;
 	border-top-left-radius: 15px;
-	margin-right: 10px;
-	width: 40%;
-	height: 120px;
+	overflow: hidden;
+	width: 100%;
+
 }
 
 #cts
 {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 }
 
 
@@ -360,10 +369,14 @@ aside img
 	display: flex;
 	flex-flow: row wrap;
 	height: 0%;
+	background-color: white;
+	box-shadow: 5px 2px 5px grey;
 }
 #activites ul
 {
 	padding: 0;
+	height: 450px;
+	margin: 1%;
 }
 #activites img
 {
@@ -374,14 +387,10 @@ aside img
 
 .figureActi
 {
-	width: 100%; 
 	border-radius: 15px;
-	background-color: white;
-	box-shadow: 5px 2px 5px grey;
-	margin-left: 20px;
-	margin-right: 20px;	
+	margin: 5px;
 	overflow: hidden;
-	max-height: max-content;
+	height: 450px;
 }
 
 .figcaptionActi
@@ -401,7 +410,6 @@ aside img
 {
 	width: 100%;
 	margin: 0;
-	height: auto;
 }
 .ulActi
 {
