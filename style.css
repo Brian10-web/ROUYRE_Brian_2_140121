@@ -250,10 +250,10 @@ main i
 
 #hebergement img
 {
-	border-top-left-radius: 15px;
-	border-top-right-radius: 15px;
+	/* border-top-left-radius: 15px;
+	border-top-right-radius: 15px; */
 	width: 100%;
-	height: 150px;
+	/* height: 150px; */
 }
 
 #hebergement h2
@@ -262,7 +262,7 @@ main i
 }
 .figureHeb
 {
-	border-radius: 15px;
+	border-radius: 15px 15px 0px 0px;
 	overflow: hidden;
 	margin: 5px;
 	height: 120px;
@@ -276,7 +276,7 @@ main i
 	flex-direction: column;
 	list-style-type: none;
 	margin: 20px;
-	box-shadow: 5px 5px 15px -1px;
+	box-shadow: 5px 5px 15px -10px;
 }
 
 .figcaptionHeb
@@ -292,7 +292,17 @@ main i
 	margin: 0;
 	padding: 0;
 }
+.mer
+{
+	top: -35px;
+	position: relative;
+}
 
+.aminaIMG
+{
+	top: -100px;
+	position: relative;
+}
 
 aside
 {
@@ -337,20 +347,27 @@ aside
 
 .figPop
 {
-	display: flex;
+	border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+	/* display: flex; */
 	margin: 0;
-	height: auto;
+	height: 100%;
 	width: 40%;
 	margin-right: 5px;
+	overflow: hidden;
 }
 
-#pop img
+#pop img.paysage
 {
-	border-bottom-left-radius: 15px;
-	border-top-left-radius: 15px;
-	overflow: hidden;
+	height: 100%;
+}
+#pop img.portrait
+{
 	width: 100%;
+}
 
+.cts{
+	width: 60%;
 }
 
 #cts
@@ -359,6 +376,22 @@ aside
 	flex-direction: row;
 }
 
+.soleil
+{
+	position: relative;
+	left: -20px;
+}
+.aucoeur
+{
+	position: relative;
+	left: -15px;
+}
+
+.bleublanc
+{
+	position: relative;
+	top: -20px;
+}
 
 /*ACTIVITES*/
 
@@ -374,17 +407,31 @@ aside
 	margin-left: 20px;
 }
 
-#activites li
+.liActi
 {
+	width: 24%;
 	list-style-type: none;
-	display: flex;
-	flex-flow: row wrap;
-	background-color: white;
-	border-radius: 15px;
-	box-shadow: 5px 5px 15px -1px;
-	width: 100%;
+	margin: 10px;
+	height: 450px;
 }
 
+.ulActi
+{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.cardActivite
+{
+	border-radius: 15px;
+	background-color: white;
+	flex-direction: column;
+	box-shadow: 5px 5px 15px -12px;
+	height: 100%;
+}
 .figureActi
 {
 	border-radius: 15px;
@@ -392,36 +439,76 @@ aside
 	border-bottom-right-radius: 0px;
 	margin: 0px;
 	overflow: hidden;
-	height: 450px;
+	height: 90%;
 	text-align: center;
 }
-
+.vieuxportIMG
+{
+	position: relative;
+	left: -175px;
+}
 #fort
 {
-	height: 205px;
+	height: 55%;
+}
+
+.figFort
+{
+	height: 82%;
+}
+.fortIMG
+{
 	position: relative;
+	top: -100px;
 }
 
 #iles
 {
-	height: 165px;
-	margin: auto;
+	height: 40%;
+	margin-top: 20px;
+}
+
+.figIles
+{
+	height: 76%;
+}
+
+.calanquesIMG
+{
+	position: relative;
+	left: -150px;
 }
 
 #garde
 {
-	height: 175px;
+	height: 45%;
+}
+
+.figGarde
+{
+	height: 79%;
 }
 #longchamp
 {
-	height: 175px;
+	height: 50%;
+	margin-top: 20px;
 }
-
+.figLongchamp
+{
+	height: 81%;
+}
 .figcaptionActi
 {
 	display: flex;
 	font-size: 12px;
 	padding-left: 10px;
+	height: 10px;
+}
+
+.simple
+{
+	display: flex;
+	flex-direction: column;
 }
 
 .double
@@ -431,27 +518,13 @@ aside
 }
 
 
-.liActi
+#activites img.paysage
+{
+	height: 100%;
+}
+#activites img.portrait
 {
 	width: 100%;
-	margin: 0;
-}
-.ulActi
-{
-	width: 23%;
-	display: flex;
-	padding-left: 0;
-	padding-right: 0;
-	margin-right: 0;
-	margin-left: 0;
-	height: 500px;
-	margin: 1%;
-	padding: 0;
-}
-
-.grandeIMG
-{
-	height: 450px;
 }
 
 .espace
@@ -463,6 +536,8 @@ aside
 {
 	margin-top: 32px;
 }
+
+
 
 
 /*Footer*/
