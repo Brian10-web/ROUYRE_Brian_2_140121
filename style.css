@@ -3,7 +3,8 @@ body
 	width: 100%;
 	height: 100%;
 	margin: 0;
-	font-family: Raleway, sans-serif;
+	font-family: 'Raleway-ExtraLight';
+	src: url('Raleway-ExtraLight.ttf');
 }
 
 /*HEADER*/
@@ -66,7 +67,14 @@ nav a:hover /*lorsque qu'on survole le bouton un bord bleu apparait*/
 {
 	margin-left: 20px;
 }
-
+.p4
+{
+	line-height: 2em;
+}
+.p5
+{
+	line-height: 2.5em;
+}
 .blue  /*BOUTON INFORMATION*/
 {
 	color: #0065FC;
@@ -128,7 +136,6 @@ button  /*bouton de recherche*/
 
 #recherche i
 {
-	size: 3em;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -225,7 +232,7 @@ main i
 
 #hebergement
 {
-	width: 70%;
+	/* width: 70%; */
 	background-color: #F2F2F2;
 	/* position: static; */
 	border-radius: 15px;
@@ -250,10 +257,7 @@ main i
 
 #hebergement img
 {
-	/* border-top-left-radius: 15px;
-	border-top-right-radius: 15px; */
 	width: 100%;
-	/* height: 150px; */
 }
 
 #hebergement h2
@@ -298,9 +302,9 @@ main i
 	position: relative;
 }
 
-.aminaIMG
+.aminaImg
 {
-	top: -100px;
+	top: -120px;
 	position: relative;
 }
 
@@ -337,7 +341,6 @@ aside
 
 #pop li
 {
-	background-color: white;
 	border: 4px solid white;
 	border-radius: 15px;
 	margin: 20px;
@@ -357,10 +360,10 @@ aside
 	overflow: hidden;
 }
 
-#pop img.paysage
+/* #pop img.paysage
 {
 	height: 100%;
-}
+} */
 #pop img.portrait
 {
 	width: 100%;
@@ -376,22 +379,7 @@ aside
 	flex-direction: row;
 }
 
-.soleil
-{
-	position: relative;
-	left: -20px;
-}
-.aucoeur
-{
-	position: relative;
-	left: -15px;
-}
 
-.bleublanc
-{
-	position: relative;
-	top: -20px;
-}
 
 /*ACTIVITES*/
 
@@ -442,61 +430,7 @@ aside
 	height: 90%;
 	text-align: center;
 }
-.vieuxportIMG
-{
-	position: relative;
-	left: -175px;
-}
-#fort
-{
-	height: 55%;
-}
 
-.figFort
-{
-	height: 82%;
-}
-.fortIMG
-{
-	position: relative;
-	top: -100px;
-}
-
-#iles
-{
-	height: 40%;
-	margin-top: 20px;
-}
-
-.figIles
-{
-	height: 76%;
-}
-
-.calanquesIMG
-{
-	position: relative;
-	left: -150px;
-}
-
-#garde
-{
-	height: 45%;
-}
-
-.figGarde
-{
-	height: 79%;
-}
-#longchamp
-{
-	height: 50%;
-	margin-top: 20px;
-}
-.figLongchamp
-{
-	height: 81%;
-}
 .figcaptionActi
 {
 	display: flex;
@@ -517,15 +451,6 @@ aside
 	flex-wrap: wrap;
 }
 
-
-#activites img.paysage
-{
-	height: 100%;
-}
-#activites img.portrait
-{
-	width: 100%;
-}
 
 .espace
 {
@@ -584,7 +509,268 @@ footer
 
 /*RESPONSIVE*/
 
-@media screen and (max-width: 400px) 
+@media screen and (max-width: 800px)
+{
+	body
+	{
+		width: auto;
+	}
+
+	main
+	{
+		flex-direction: column-reverse;
+		margin: 0;
+	}
+
+	nav ul
+	{
+		flex-direction: column;
+	}
+
+	#filtre
+	{
+		flex-wrap: wrap;
+	}
+
+	aside
+	{
+		background-color: #F2F2F2;
+		width: auto;
+	}
+	
+	#pop img.paysage
+	{
+		width: 100%;
+	}
+
+	.popLi
+	{
+		background-color: white;
+	}
+	.soleil
+	{
+		position: relative;
+		top: -50px;
+	}
+	.aucoeur
+	{
+		position: relative;
+		top: -25px;
+	}
+
+	.bleublanc
+	{
+		position: relative;
+		top: -180px;
+	}
+
+	#hebergement
+	{
+		background-color: white;
+	}
+
+	#hebRes
+	{
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+	}
+	.ulHeb
+	{
+		flex-direction: column;
+	}
+
+	.liHeb
+	{
+		width: 90%;
+		margin-left: 20px;
+	}
+
+	.ulActi
+	{
+		flex-direction: column;
+	}
+	.liActi
+	{
+		display: flex;
+		width: 100%;
+		height: 150px;
+	}
+	.cardActivite
+	{
+		height: 100%;
+	}
+
+	#fort
+	{
+		width: 47%;
+	}
+
+	#iles
+	{
+		width: 47%;
+		margin-left: 40px;
+	}
+
+	#garde
+	{
+		width: 47%;
+	}
+
+	#longchamp
+	{
+		width: 47%;
+		margin-left: 40px;
+	}
+
+	#activites h2
+	{
+		margin-top: 10px;
+	}
+
+	.figureActi
+	{
+		height: 80%;
+	}
+	
+	.fortIMG
+	{
+		width: 100%;
+		position: relative;
+		top: -200px;
+	}
+	.ilesIMG
+	{
+		width: 100%;
+	}
+	.gardeIMG
+	{
+		width: 100%;
+	}
+	.longchampIMG
+	{
+		width: 100%;
+		position: relative;
+		top: -50px;
+	}
+	.calanquesIMG
+	{
+		width: 100%;
+		position: relative;
+		top: -200px;
+	}
+	.vieuxportIMG
+	{
+		width: 100%;
+		position: relative;
+		top: -225px;
+	}
+
+
+	footer
+	{
+		flex-direction: column;
+	}
+} 
+
+@media screen and (min-width: 801px)
+{
+	#pop img.paysage
+	{
+		height: 100%;
+	}
+	.soleil
+	{
+		position: relative;
+		left: -20px;
+	}
+	.aucoeur
+	{
+		position: relative;
+		left: -15px;
+	}
+
+	.bleublanc
+	{
+		position: relative;
+		top: -20px;
+	}
+
+	#pop li
+	{
+		background-color: white;
+	}
+
+	#hebergement
+	{
+		width: 70%;
+	}
+	.vieuxportIMG
+	{
+		position: relative;
+		left: -175px;
+	}
+	#fort
+	{
+		height: 55%;
+	}
+
+	.figFort
+	{
+		height: 82%;
+	}
+	.fortIMG
+	{
+		position: relative;
+		top: -100px;
+	}
+
+	#iles
+	{
+		height: 40%;
+		margin-top: 20px;
+	}
+
+	.figIles
+	{
+		height: 76%;
+	}
+
+	.calanquesIMG
+	{
+		position: relative;
+		left: -150px;
+	}
+
+	#garde
+	{
+		height: 45%;
+	}
+
+	.figGarde
+	{
+		height: 79%;
+	}
+	#longchamp
+	{
+		height: 50%;
+		margin-top: 20px;
+	}
+	.figLongchamp
+	{
+		height: 81%;
+	}
+	#activites img.paysage
+	{
+		height: 100%;
+	}
+	#activites img.portrait
+	{
+		width: 100%;
+	}
+
+}
+/* @media screen and (max-width: 580px) 
 {
 	body 
 	{
@@ -619,7 +805,6 @@ footer
 	main
 	{
 		flex-direction: column-reverse;
-		max-width: auto;
 		margin: 0;
 	}
 	#hebergement
@@ -656,5 +841,5 @@ footer
 		flex-direction: column;
 	}
 	
-}
+} */
 
