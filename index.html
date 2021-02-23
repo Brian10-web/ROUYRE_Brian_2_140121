@@ -5,8 +5,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Reservia</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<!-- <link rel = "preconnect" href = "https://fonts.gstatic.com">
-	<link href = "https://fonts.googleapis.com/css2? family = Raleway: wght @ 100 & display = swap" rel = "feuille de style"> -->
 	<script src="https://kit.fontawesome.com/46f48c67bd.js" crossorigin="anonymous"></script>
 </head>
 
@@ -17,15 +15,26 @@
 				<img src="images/logoreservia.png" alt="logo">
 			</div>
 			
-			<nav> <!-- navigation avec le menu -->
-				<ul>
+			<nav id="navMenu"> <!-- navigation avec le menu -->
+				<ul id="hebAct">
 					<li class="nav1"><a href="#hebergement">Hébergements</a> </li>
 					<li class="nav1"><a href="#activites">Activités</a></li>	
+				</ul>
+			<!-- </nav>
+			<nav> -->
+				<ul>
 					<li class="nav2"><a href="">S'inscrire</a> </li>
 				</ul>
 			</nav>
 		</section>
 	</header>
+
+	<article id="introT">
+		<h3>
+			Trouver votre hébergement pour des vacances de rêves
+		</h3>
+		<p>En plein centre ville ou en pleine nature</p>
+	</article>
 
 
 	<section id="search"> <!-- l'outil recherche  -->
@@ -72,7 +81,7 @@
 			<ul class="ulHeb">
 				<li class="liHeb">
 					<figure class="figureHeb">
-						<img src="images/cannebiere.jpg" alt="cannbiere">
+						<img src="images/cannebiere.jpg" alt="cannbiere" class="cannebiereImg">
 					</figure>
 					<div class="figcaptionHeb">
 						<h3 class="p1">Auberge de la cannebière</h3>
@@ -83,7 +92,7 @@
 
 				<li class="liHeb">
 					<figure class="figureHeb">
-						<img src="images/port.jpg" alt="port">
+						<img src="images/port.jpg" alt="port" class="portImg">
 					</figure>
 					<div class="figcaptionHeb">
 						<h3 class="p1">Hotel du port</h3>
@@ -94,7 +103,7 @@
 	
 				<li class="liHeb">
 					<figure class="figureHeb">
-						<img src="images/mouette.jpg" alt="mouettes">
+						<img src="images/mouette.jpg" alt="mouettes" class="mouettesImg">
 					</figure>
 					<div class="figcaptionHeb">
 						<h3 class="p1">Hotel les mouettes</h3>
@@ -107,7 +116,7 @@
 			<ul class="ulHeb">
 				<li class="liHeb">
 					<figure class="figureHeb">
-						<img src="images/hoteldelamer.jpg" alt="hoteldelamer" class="mer">
+						<img src="images/hoteldelamer.jpg" alt="hoteldelamer" class="merImg">
 					</figure>
 					<div class="figcaptionHeb">
 						<h3 class="p1">Hotel de la mer</h3>
@@ -117,7 +126,7 @@
 				</li>
 				<li class="liHeb">
 					<figure class="figureHeb">
-						<img src="images/panier.jpg" alt="panier">
+						<img src="images/panier.jpg" alt="panier" class="panierImg">
 					</figure>
 					<div class="figcaptionHeb">
 						<h3 class="p1">Auberge le panier</h3>
@@ -195,7 +204,7 @@
                     </div>
 				</div>
 			</li>
-			<li class="liActi">
+			<li class="liActi doubleActi">
 				<div class="cardActivite double" id="fort">
 					<figure class="figureActi figFort">
                         <img src="images/fort.jpg" alt="fort" class="portrait fortIMG">
@@ -223,7 +232,7 @@
                     </div>
 				</div>
             </li>
-			<li class="liActi">
+			<li class="liActi doubleActi">
                 <div class="cardActivite double" id="garde">
 					<figure class="figureActi figGarde">
                         <img src="images/garde.jpg" alt="garde" class="portrait gardeIMG">
