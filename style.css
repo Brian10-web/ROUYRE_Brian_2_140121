@@ -24,13 +24,11 @@ body
 	justify-content: space-between;
 }
 
-#logo img{
-	margin-left: 20px;
-}
 
 #logo
 {
 	height: 60px;
+	margin: 20px;
 }
 
 header img
@@ -45,7 +43,7 @@ nav ul
 {
 	list-style-type: none;
 	display: flex;
-	height: 100%;
+	width: 100%;
 	margin: 0;
 	padding: 0;
 }
@@ -62,6 +60,10 @@ nav a
 	padding-top: 28px;
 	color: black;
 }
+.nav2 a
+{
+	color: #0065FC;
+}
 
 #navMenu
 {
@@ -71,16 +73,17 @@ nav a
 nav a:hover /*lorsque qu'on survole le bouton un bord bleu apparait*/
 {
 	border-top: 2px solid #0065FC;
+	color: #0065FC;
 } 
 
-#introT
+.introT
 {
 	margin-left: 20px;
 }
 
 /*SECTION SEARCH*/
 
-.p1 /*p1 et p2 pour coller les deux lignes*/
+.p1 
 {
 	line-height: 1em;
 }
@@ -100,6 +103,8 @@ nav a:hover /*lorsque qu'on survole le bouton un bord bleu apparait*/
 .p5
 {
 	line-height: 2.5em;
+	font-weight: bold;
+	
 }
 .blue  /*BOUTON INFORMATION*/
 {
@@ -171,10 +176,15 @@ button  /*bouton de recherche*/
 	border-top-right-radius: 0px;
 	border-bottom-right-radius: 0px;
 	padding-left: 10px;
-	padding-right: 5px;
-	padding-bottom: 5px;
-	padding-top: 5px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-top: 10px;
 
+}
+
+#search h3
+{
+	font-weight: bold;
 }
 
 /*SECTION FILTRE*/ 
@@ -199,6 +209,7 @@ button  /*bouton de recherche*/
 	padding-left: 0px;
 	margin-left: 20px;
 	margin-right: 20px;
+
 }
 
 #filtre li
@@ -210,6 +221,11 @@ button  /*bouton de recherche*/
 	padding-top: 5px;
 	padding-right: 5px;
 }
+.titreFiltre
+{
+	margin-left: 20px;
+	margin-right: 20px;
+}
 
 .filtre1
 {
@@ -219,9 +235,8 @@ button  /*bouton de recherche*/
 .filtre2
 {
 	display: flex;
-	border:2px solid #F2F2F2;
+	border:2px solid  #F2F2F2;
 	border-radius: 18px;
-	border-left: 0;
 }
 
 .filtre2:hover
@@ -254,7 +269,13 @@ main i
 {
 	color: #F2F2F2;
 }
+main a
+{
+	text-decoration: none;
+	color: black;
+}
 
+/* HEBERGEMENT */
 
 #hebergement
 {
@@ -333,6 +354,7 @@ main i
 	position: relative;
 }
 
+/* POPULAIRE ASIDE */
 aside
 {
 	width: 30%;
@@ -428,9 +450,13 @@ aside
 
 #activites
 {
-	display: flex;
 	height: auto;
 	margin: 20px;
+}
+#activites a
+{
+	text-decoration: none;
+	color: black;
 }
 
 #titleActi
@@ -581,38 +607,25 @@ footer
 
 }
 
-#propos ul
+#propos 
 {
 	list-style-type: none;
-}
-
-#propos
-{
-	display: flex;
 	width: 33%;
-}
-
-#noshebergements ul
-{
-	list-style-type: none;
 }
 
 #noshebergements
 {
-	display: flex;
+	list-style-type: none;
 	width: 33%;
 }
 
-#assistance ul
-{
-	list-style-type: none;
-}
 
 #assistance
 {
-	display: flex;
+	list-style-type: none;
 	width: 33%;
 }
+
 
 
 /*RESPONSIVE*/
@@ -835,18 +848,46 @@ footer
 	{
 		width: auto;
 	}
+	#titre
+	{
+		display: block;
+	}
 
 	.nav2 a
 	{
 		color:  #0065FC;
 		font-weight: bold;
 	}
-
+	
 	.nav1
 	{
-		display: flex;
+		
 		width: 100%;
-		margin-bottom: 20px;
+		padding-bottom: 10px;
+		text-align: center;
+		border-bottom: 2px #F2F2F2 solid;
+		margin-left: 0;
+		margin-right: 0;
+		margin-top: 10px;
+	}
+
+	nav a:hover
+	{
+		color: #0065FC;
+		border-top: none;
+	}
+
+	.nav1:hover
+	{
+		border-bottom: 2px #0065FC solid;
+	}
+	
+
+	.nav2
+	{
+		position: absolute;
+		top: 20px;
+		right: 20px;
 	}
 	#logo
 	{
@@ -884,6 +925,8 @@ footer
 	{
 		background-color: white;
 		width: auto;
+		margin: 0;
+		padding: 0;
 	}
 	#heb
 	{
@@ -913,6 +956,12 @@ footer
 	.aminaImg
 	{
 		top: -175px;
+	}
+
+	#activites
+	{
+		margin: 20px;
+		margin-top: 50px;
 	}
 	
 	#activites ul
@@ -996,6 +1045,11 @@ footer
 		width: auto;
 		border-radius: 0;
 	}
+	#popimage
+	{
+		margin-right: 20px;
+		margin-left: 20px;
+	}
 	.figureHeb
 	{
 		margin: 0;
@@ -1007,6 +1061,26 @@ footer
 	{
 		flex-direction: column;
 	}
-	
+
+	#propos
+	{
+		width: 100%;
+	}
+
+	#noshebergements
+	{
+		width: 100%;
+	}
+
+	#assistance
+	{
+		width: 100%;
+	}
+
+	footer ul
+	{
+		padding-left: 20px;
+	}
+
 }
 

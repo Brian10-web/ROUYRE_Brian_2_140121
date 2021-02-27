@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,49 +9,38 @@
 </head>
 
 <body>
-	<header>
-		<section id="titre">	
-			<div id="logo">
+	<header id="titre">
+			<figure id="logo">
 				<img src="images/logoreservia.png" alt="logo">
-			</div>
+			</figure>
 			
 			<nav id="navMenu"> <!-- navigation avec le menu -->
 				<ul id="hebAct">
-					<li class="nav1"><a href="#hebergement">Hébergements</a> </li>
-					<li class="nav1"><a href="#activites">Activités</a></li>	
-				</ul>
-			<!-- </nav>
-			<nav> -->
-				<ul>
-					<li class="nav2"><a href="">S'inscrire</a> </li>
+					<li class="nav1">
+						<a href="#hebergement">
+							Hébergements
+						</a> 
+					</li>
+					<li class="nav1"><a href="#activites">Activités</a></li>
+					<li class="nav2"><a href=""><strong>S'inscrire</strong></a> </li>	
 				</ul>
 			</nav>
-		</section>
 	</header>
 
-	<article id="introT">
-		<h3>
+	<section id="search"> <!-- l'outil recherche  -->
+		<h3 class="introT">
 			Trouver votre hébergement pour des vacances de rêves
 		</h3>
-		<p>En plein centre ville ou en pleine nature</p>
-	</article>
-
-
-	<section id="search"> <!-- l'outil recherche  -->
+		<p class="introT">En plein centre ville ou en pleine nature</p>
 		<div id="recherche">
-				<i class="fas fa-map-marker-alt"></i>
-				<input type="search" name="Rechercher" placeholder="Marseille , France"> 
-				<button>Recherher</button>						
+			<i class="fas fa-map-marker-alt"></i>
+			<input type="search" name="Rechercher" placeholder="Marseille , France"> 
+			<button>Recherher</button>						
 		</div>
-	</section>
-			
-				
-			
-			
-	<section id="filtre"> <!-- barre de filtre -->
-			<ul>
-				<li>Filtres</li>
-			</ul>
+
+		
+		<div id="filtre">
+			<h3 class="titreFiltre">Filtres</h3>
 			<ul class="filtre2">
 				<li class="filtre1"><i class="fas fa-money-bill-wave barre"></i></li>
 				<li>Economique</li>
@@ -68,6 +57,8 @@
 				<li class="filtre1"><i class="fas fa-dog barre"></i></li>
 				<li>Animaux autorisés</li>
 			</ul>
+		</div>
+			
 			
 	</section>
 
@@ -80,7 +71,8 @@
 			<div id="hebRes"> 
 			<ul class="ulHeb">
 				<li class="liHeb">
-					<figure class="figureHeb">
+					<a href="">
+					<figure class="figureHeb">	
 						<img src="images/cannebiere.jpg" alt="cannbiere" class="cannebiereImg">
 					</figure>
 					<div class="figcaptionHeb">
@@ -88,9 +80,11 @@
 						<p class="p1">Nuit à partir de <strong>25 €</strong></p>
 						<p class="p1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star grey"></i></p>
 					</div>
+					</a>
 				</li>
 
 				<li class="liHeb">
+					<a href="">
 					<figure class="figureHeb">
 						<img src="images/port.jpg" alt="port" class="portImg">
 					</figure>
@@ -99,9 +93,11 @@
 						<p class="p1">Nuit à partir de 52 €</p>
 						<p class="p1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
 					</div>
+					</a>
 				</li>
 	
 				<li class="liHeb">
+					 <a href="">
 					<figure class="figureHeb">
 						<img src="images/mouette.jpg" alt="mouettes" class="mouettesImg">
 					</figure>
@@ -110,11 +106,13 @@
 						<p class="p1">Nuit à partir 76 €</p>
 						<p class="p1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star grey"></i></p>
 					</div>
+					</a>
 				</li>
 			</ul>
 
 			<ul class="ulHeb">
 				<li class="liHeb">
+					<a href="">
 					<figure class="figureHeb">
 						<img src="images/hoteldelamer.jpg" alt="hoteldelamer" class="merImg">
 					</figure>
@@ -123,8 +121,10 @@
 						<p class="p1">Nuit à partir de 46 €</p>
 						<p class="p1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star grey"></i><i class="fas fa-star grey"></i></p>
 					</div>
+					</a>
 				</li>
 				<li class="liHeb">
+					<a href="">
 					<figure class="figureHeb">
 						<img src="images/panier.jpg" alt="panier" class="panierImg">
 					</figure>
@@ -133,8 +133,10 @@
 						<p class="p1">Nuit à partir de <strong>23 €</strong></p>
 						<p class="p1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star grey"></i></p>
 					</div>
+					</a>
 				</li>
 				<li class="liHeb">
+					<a href="">
 					<figure class="figureHeb">
 						<img src="images/amina.jpg" alt="amina" class="aminaImg">
 					</figure>
@@ -143,6 +145,7 @@
 						<p class="p1">Nuit à partir de 96 €</p>
 						<p class="p1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
 					</div>
+					</a>
 				</li>
 			</ul>
 		</div>
@@ -155,6 +158,7 @@
 				<i class="fas fa-chart-line"></i>
 			</section>
 			<ul id="pop">
+				<a href="">
 				<li class="popLi">
 					<figure class="figPop">
 						<img class="paysage soleil" src="images/soleilmatin.jpg" alt="soleildumatin">
@@ -165,6 +169,8 @@
 						<p class="p2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
 					</div>
 				</li>
+				</a>
+				<a href="">
 				<li class="popLi">
 					<figure class="figPop">
 						<img class="paysage aucoeur" src="images/aucoeur.jpg" alt="aucoeur">
@@ -174,7 +180,11 @@
 						<p class="p2">Nuit à partir de 71 €</p><br>
 						<p class="p2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star grey"></i></p>
 					</div>
+					
 				</li>
+				</a>
+
+				<a href="">
 				<li class="popLi">
 					<figure class="figPop">
 						<img class="portrait bleublanc" src="images/bleublanc.jpg" alt="bleuetblanc">
@@ -184,55 +194,72 @@
 						<p class="p2">Nuit à partir de 96 €</p><br>
 						<p class="p2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star grey"></i></p>
 					</div>
+					
 				</li>
+				</a>
 			</ul>
 		</aside>
 	</main>
 	
 
-	<h2 id="titleActi">Activités à Marseille</h2>
+	
 	<section id="activites">
-		
+		<h2 id="titleActi">Activités à Marseille</h2>
 		<ul class="ulActi">
 			<li class="liActi simple">
+				
 				<div class="cardActivite">
+					<a href="">
 					<figure class="figureActi acti1">
                         <img src="images/vieuxport.jpg" alt="vieuxport" class="paysage vieuxportIMG">
                     </figure>
                     <div class="figcaptionActi">
                         <h2>Vieux port</h2>
                     </div>
+					</a>
 				</div>
+				
 			</li>
 			<li class="liActi doubleActi">
+				<a href="">
 				<div class="cardActivite double" id="fort">
 					<figure class="figureActi figFort">
                         <img src="images/fort.jpg" alt="fort" class="portrait fortIMG">
                     </figure>
                     <div class="figcaptionActi">
                         <h2>Fort de Fomègues</h2>
-                    </div>
+                    </div>	
 				</div>
+				</a>
+				
+				<a href="">
 				<div class="cardActivite double" id="iles">
 					<figure class="figureActi figIles">
                         <img src="images/iles.jpg" alt="iles" class="portrait ilesIMG">
                     </figure>
                     <div class="figcaptionActi">
                         <h2>Iles de Frioul</h2>
-                    </div>
+					</div>
 				</div>
+				</a>
+				
 			</li>
 			<li class="liActi simple">
+				
                 <div class="cardActivite">
+					<a href="">
 					<figure class="figureActi">
                         <img src="images/calanques.jpg" alt="calanques" class="paysage calanquesIMG">
                     </figure>
                     <div class="figcaptionActi">
                         <h2>Parc National des calanques</h2>
                     </div>
+					</a>
 				</div>
+				
             </li>
 			<li class="liActi doubleActi">
+				<a href="">
                 <div class="cardActivite double" id="garde">
 					<figure class="figureActi figGarde">
                         <img src="images/garde.jpg" alt="garde" class="portrait gardeIMG">
@@ -241,6 +268,9 @@
                         <h2>Notre-Dame-de-la-Garde</h2>
                     </div>
                 </div>
+				</a>
+				
+				<a href="">	
                 <div class="cardActivite double" id="longchamp">
 					<figure class="figureActi figLongchamp">
                         <img src="images/longchamp.jpg" alt="longchamp" class="portrait longchampIMG">
@@ -249,38 +279,32 @@
                         <h2>Parc longchamp</h2>
                     </div>
 				</div>
+				</a>
+				
             </li>
 		</ul>
 		 
 	</section>
 
-	<footer>
-		
-			<div id="propos">
-				<ul>
-					<li class="p5"><strong>A propos</strong></li>
-					<li class="p4">Fonctionnement du site</li>
-					<li class="p4">Conditions générales de vente</li>
-					<li class="p4">Données et confidentialité</li>
-				</ul>
-			</div>
+	<footer>	
+		<ul id="propos">
+			<li class="p5">A propos</li>
+			<li class="p4">Fonctionnement du site</li>
+			<li class="p4">Conditions générales de vente</li>
+			<li class="p4">Données et confidentialité</li>
+		</ul>
 
-			<div id="noshebergements">
-				<ul>
-					<li class="p5"><strong>Nos hébergements</strong></li>
-					<li class="p4">Charte qualité</li>
-					<li class="p4">Soumettre votre hôtel</li>	
-				</ul>
-			</div>
-
-			<div id="assistance">
-				<ul>
-					<li class="p5"><strong>Assistance</strong></li>
-					<li class="p4">Centre d'aide</li>
-					<li class="p4">Nous contacter</li>
-				</ul>
-			</div>	
+		<ul id="noshebergements">
+			<li class="p5">Nos hébergements</li>
+			<li class="p4">Charte qualité</li>
+			<li class="p4">Soumettre votre hôtel</li>	
+		</ul>
 	
+		<ul id="assistance">
+			<li class="p5">Assistance</li>
+			<li class="p4">Centre d'aide</li>
+			<li class="p4">Nous contacter</li>
+		</ul>
 	</footer>
 
 </body>
