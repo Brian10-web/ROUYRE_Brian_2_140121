@@ -394,6 +394,7 @@ aside
 	margin: 20px;
 	display: flex;
 	height: 120px;
+	box-shadow: 5px 5px 15px -10px;
 }
 
 
@@ -611,12 +612,14 @@ footer
 {
 	list-style-type: none;
 	width: 33%;
+	padding: 0;
 }
 
 #noshebergements
 {
 	list-style-type: none;
 	width: 33%;
+	padding: 0;
 }
 
 
@@ -624,6 +627,12 @@ footer
 {
 	list-style-type: none;
 	width: 33%;
+	padding: 0;
+}
+
+footer li
+{
+	margin-left: 20px;
 }
 
 
